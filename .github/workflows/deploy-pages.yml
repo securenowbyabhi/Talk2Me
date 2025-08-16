@@ -27,7 +27,7 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      # SPA routing fallback: let refresh/deep links work on GitHub Pages
+      # SPA routing fallback: lets refresh/deep links work on GitHub Pages
       - name: SPA 404 fallback
         run: |
           if [ -d "dist" ]; then cp dist/index.html dist/404.html; fi
